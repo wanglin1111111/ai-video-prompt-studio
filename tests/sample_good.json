@@ -1,0 +1,53 @@
+{
+  "project": "老厨房的早晨",
+  "bibles": {
+    "characters": [
+      {"id": "CHAR-1", "name": "林小满", "look": "30岁女性，齐肩黑发，左眉小疤", "wardrobe": "藏青色围裙、白色棉麻衬衫"}
+    ],
+    "scenes": [
+      {"id": "SCENE-1", "name": "老厨房", "look": "江南老厨房，木窗棂，灶台，蒸汽", "lighting": "左侧窗光软光，暖金色晨间调"}
+    ],
+    "props": [
+      {"id": "PROP-1", "name": "青花瓷碗", "look": "缠枝莲纹青花瓷碗，碗沿小缺口"}
+    ],
+    "style_bible": "实拍感，纪录片跟拍语境，35mm胶片颗粒，低饱和暖调"
+  },
+  "shots": [
+    {
+      "id": "S01",
+      "model": "seedance-2.0",
+      "duration_s": 5,
+      "aspect_ratio": "16:9",
+      "camera": {"size": "中景", "move": "固定机位"},
+      "subject": "CHAR-1 在灶台前快速搅拌",
+      "scene": "SCENE-1",
+      "lighting": "继承 SCENE-1",
+      "style": "继承 style_bible",
+      "quality": ["8K", "电影级画质"],
+      "audio": "环境声：炒菜滋滋声；无对白",
+      "prompt_zh": "中景，固定机位。30岁女性，齐肩黑发，左眉小疤，藏青色围裙、白色棉麻衬衫，在灶台前快速搅拌，蒸汽升起。江南老厨房，木窗棂，灶台。左侧窗光软光，暖金色晨间调。实拍感，纪录片跟拍语境，35mm胶片颗粒，低饱和暖调。8K，电影级画质。",
+      "prompt_en": "",
+      "i2v_start": null,
+      "i2v_end": null,
+      "continuity": ["CHAR-1", "SCENE-1", "PROP-1"]
+    },
+    {
+      "id": "S02",
+      "model": "seedance-2.0",
+      "duration_s": 5,
+      "aspect_ratio": "16:9",
+      "camera": {"size": "特写", "move": "机位前移缓推"},
+      "subject": "CHAR-1 手部特写，把拌好的菜盛进青花瓷碗",
+      "scene": "SCENE-1",
+      "lighting": "继承 SCENE-1",
+      "style": "继承 style_bible",
+      "quality": ["8K", "细节丰富"],
+      "audio": "环境声：瓷碗轻碰；无对白",
+      "prompt_zh": "特写，机位前移缓推。30岁女性林小满的手部，藏青色围裙袖口，把炒菜盛进缠枝莲纹青花瓷碗，碗沿小缺口可见。灶台热气，木窗棂背景虚化。左侧窗光软光，暖金色晨间调。实拍感，纪录片跟拍语境，35mm胶片颗粒，低饱和暖调。8K，细节丰富。",
+      "prompt_en": "",
+      "i2v_start": null,
+      "i2v_end": null,
+      "continuity": ["CHAR-1", "SCENE-1", "PROP-1"]
+    }
+  ]
+}

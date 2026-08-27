@@ -1,0 +1,44 @@
+{
+  "project": "缺陷样例——每条缺陷类型一个代表，校验器必须全部拦截",
+  "bibles": {
+    "characters": [
+      {"id": "CHAR-1", "name": "林小满", "look": "30岁女性", "wardrobe": "围裙"}
+    ],
+    "scenes": [],
+    "props": []
+  },
+  "shots": [
+    {
+      "id": "S01",
+      "model": "seedance-2.0",
+      "duration_s": 7,
+      "aspect_ratio": "16:9",
+      "camera": {"size": "中景", "move": "固定机位后缓缓推近"},
+      "subject": "林小满在做饭",
+      "scene": "SCENE-9",
+      "lighting": "",
+      "style": "电影感",
+      "quality": [],
+      "audio": "",
+      "prompt_zh": "一个女人在做饭，画面干净无路人，best quality",
+      "prompt_en": "",
+      "continuity": ["CHAR-7"]
+    },
+    {
+      "id": "shot-3",
+      "model": "midjourney-video-1",
+      "duration_s": -5,
+      "aspect_ratio": "16:9",
+      "camera": {"size": "中景"},
+      "subject": "",
+      "scene": "",
+      "lighting": "",
+      "style": "",
+      "quality": [],
+      "audio": "",
+      "prompt_zh": "都行",
+      "prompt_en": "",
+      "continuity": []
+    }
+  ]
+}

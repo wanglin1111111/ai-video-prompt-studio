@@ -1,0 +1,91 @@
+{
+  "project": "千卷 · 20秒宣传短片（AI艺术黑客松现场循环播放用）",
+  "story": "观众写下三五行家乡记忆，文字化作墨滴落入宣纸，墨色晕开成山水长卷，字迹化作桥与船，朱砂印章落款——同一段文字永远生成同一幅画。",
+  "bibles": {
+    "characters": [
+      {"id": "CHAR-1", "name": "执笔的手", "look": "一只成年人的手，指节分明，袖口为素色棉麻", "wardrobe": "素色棉麻袖口"}
+    ],
+    "scenes": [
+      {"id": "SCENE-1", "name": "宣纸长卷", "look": "一张横展的宣纸长卷，表面微有纤维纹理", "lighting": "顶光柔和均匀，纸面微暖白"}
+    ],
+    "props": [
+      {"id": "PROP-1", "name": "狼毫毛笔", "look": "竹杆狼毫毛笔，笔锋饱蘸浓墨"},
+      {"id": "PROP-2", "name": "朱砂印章", "look": "方形朱砂印章，印面阴刻二字"}
+    ],
+    "style_bible": "水墨动画风格，宣纸质感，低饱和黑白灰，朱砂红为唯一点缀色，大量留白"
+  },
+  "shots": [
+    {
+      "id": "S01",
+      "model": "seedance-2.0",
+      "duration_s": 5,
+      "aspect_ratio": "16:9",
+      "camera": {"size": "特写", "move": "固定机位"},
+      "subject": "CHAR-1 执 PROP-1 悬于 SCENE-1 上方，一滴浓墨自笔锋坠落",
+      "scene": "SCENE-1",
+      "lighting": "继承 SCENE-1",
+      "style": "继承 style_bible",
+      "quality": ["8K", "细节丰富"],
+      "audio": "极静环境声，一滴墨落纸的轻响；无对白",
+      "prompt_zh": "特写，固定机位。一只成年人的手，指节分明，袖口为素色棉麻，执笔的手悬于纸面，竹杆狼毫毛笔笔锋饱蘸浓墨，一滴浓墨自笔锋坠落。一张横展的宣纸长卷，表面微有纤维纹理。顶光柔和均匀，纸面微暖白。水墨动画风格，宣纸质感，低饱和黑白灰，朱砂红为唯一点缀色，大量留白。8K，细节丰富。",
+      "prompt_en": "",
+      "i2v_start": null,
+      "i2v_end": "墨滴触纸瞬间定格（转场锚点）",
+      "continuity": ["CHAR-1", "PROP-1", "SCENE-1"]
+    },
+    {
+      "id": "S02",
+      "model": "seedance-2.0",
+      "duration_s": 5,
+      "aspect_ratio": "16:9",
+      "camera": {"size": "大远景", "move": "机位后移缓缓拉远"},
+      "subject": "浓墨在纸上晕染化作江南远山与水面，留白成雾",
+      "scene": "SCENE-1",
+      "lighting": "继承 SCENE-1",
+      "style": "继承 style_bible",
+      "quality": ["8K", "细节丰富"],
+      "audio": "古琴单音一声，环境留白；无对白",
+      "prompt_zh": "大远景，机位后移缓缓拉远。浓墨在宣纸上晕染开来，化作江南远山与平静水面，墨色浓淡分明，留白处成雾。一张横展的宣纸长卷，表面微有纤维纹理。顶光柔和均匀，纸面微暖白。水墨动画风格，宣纸质感，低饱和黑白灰，大量留白。8K，细节丰富。",
+      "prompt_en": "",
+      "i2v_start": "承接S01末帧：墨滴触纸",
+      "i2v_end": "山水长卷成形定格",
+      "continuity": ["SCENE-1"]
+    },
+    {
+      "id": "S03",
+      "model": "seedance-2.0",
+      "duration_s": 5,
+      "aspect_ratio": "16:9",
+      "camera": {"size": "中景", "move": "镜头自左向右缓慢横移"},
+      "subject": "画境水面浮现手写小字，字迹化作石桥与乌篷船",
+      "scene": "SCENE-1",
+      "lighting": "继承 SCENE-1",
+      "style": "继承 style_bible",
+      "quality": ["8K", "细节丰富"],
+      "audio": "橹声轻摇，水声；无对白",
+      "prompt_zh": "中景，镜头自左向右缓慢横移。宣纸长卷的画境中，一行行手写小字浮现于水面之上，字迹化作石桥与乌篷船。一张横展的宣纸长卷，表面微有纤维纹理。顶光柔和均匀，纸面微暖白。水墨动画风格，宣纸质感，低饱和黑白灰，大量留白。8K，细节丰富。",
+      "prompt_en": "",
+      "i2v_start": null,
+      "i2v_end": null,
+      "continuity": ["SCENE-1"]
+    },
+    {
+      "id": "S04",
+      "model": "seedance-2.0",
+      "duration_s": 5,
+      "aspect_ratio": "16:9",
+      "camera": {"size": "特写", "move": "机位前移缓推"},
+      "subject": "PROP-2 缓缓落下盖在长卷末端，朱砂红印落于黑白画卷",
+      "scene": "SCENE-1",
+      "lighting": "继承 SCENE-1",
+      "style": "继承 style_bible",
+      "quality": ["8K", "细节丰富"],
+      "audio": "印章落纸一声闷响，随后全静；无对白",
+      "prompt_zh": "特写，机位前移缓推。方形朱砂印章缓缓落下，盖在横展宣纸长卷的末端，印面阴刻二字，朱砂红在低饱和黑白画卷上格外醒目。宣纸表面微有纤维纹理。顶光柔和均匀，纸面微暖白。水墨动画风格，宣纸质感，低饱和黑白灰，朱砂红为唯一点缀色，大量留白。8K，细节丰富。",
+      "prompt_en": "",
+      "i2v_start": null,
+      "i2v_end": "印章盖定画面定格（片尾海报帧）",
+      "continuity": ["PROP-2", "SCENE-1"]
+    }
+  ]
+}
